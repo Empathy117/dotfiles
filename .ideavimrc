@@ -1,0 +1,59 @@
+set clipboard+=unnamed
+set autochdir
+
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+exec "nohlsearch"
+
+set nocompatible
+
+let mapleader=" " 
+inoremap jk <Esc>
+set timeoutlen=200
+
+set mouse=a
+
+
+inoremap <C-a> <ESC>I
+inoremap <C-e> <ESC>A
+inoremap <C-h> <Left>
+inoremap <C-j> <Down>
+inoremap <C-k> <Up>
+inoremap <C-l> <Right>
+inoremap <C-o> <Esc>o
+inoremap <C-w> <C-Right>
+inoremap <C-b> <C-Left>
+inoremap <Home> <Esc>^i
+
+nnoremap <leader>r :action ChooseRunConfiguration<CR>
+nnoremap <leader>jj :action Run<CR>
+nnoremap <F6> :action ChooseRunConfiguration<CR>
+nnoremap <F5> :action Run<CR>
+nnoremap <C-A> :%y<CR>
+nnoremap <C-e> 5<C-e>
+nnoremap <C-y> 5<C-y>
+nnoremap ; :
+
+nnoremap <leader>as <Esc>:%y<CR>
+nnoremap <leader>sd <Esc>:%d<CR>
+nnoremap <leader>dd <Esc>ggVGx<CR>
+
+cnoremap <C-k> <Up>
+cnoremap <C-h> <Left>
+cnoremap <C-l> <Right>
+cnoremap <C-j> <Down>
+cnoremap <C-a> <Home>
+cnoremap <C-e> <End>
+cnoremap <C-d> <Del>
+
+vnoremap v <Esc>
+
+set so=5
+set surround
+set multiple-cursors
+set commentary
+set argtextobj
+set easymotion
+set ideajoin
